@@ -1,0 +1,21 @@
+h1 {
+    float: right;
+}
+
+.profileiamge {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50rem;
+    border: .0001rem solid #666666;
+    padding: .1rem;
+    box-shadow: solid; 
+    opacity: 90;
+    float: left;
+    flex-basis: 40%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
