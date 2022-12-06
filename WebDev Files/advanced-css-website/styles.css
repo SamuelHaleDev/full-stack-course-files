@@ -10,6 +10,21 @@ body {
     margin: 0;
 }
 
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 28px;
+    padding: 20px;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -42,6 +57,10 @@ body {
 .col-10{width: 83.33%;}
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
 
 /*############# Nav bar ###############*/
 nav {
@@ -94,8 +113,51 @@ ul.topnav li.dropdownIcon {
     background: linear-gradient(#076DFF, #65a5ff);
 }
 
-.leftSide-col {
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 
+        0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+div.pyIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px/*H*/ -2px/*V*/ 20px/*B*/ 2px/*S*/ rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0,0,0,1)
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border: 7px;
+}
+
+button.LearnMore {
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+}
+
+div.pfp {
+width: 100%;
+}
+
+
+div.leftSide-col {
     margin-left: 30%;
+}
+
+div.rightSide-col {
+    margin-left: 15%;
 }
 
 h1.large {
@@ -103,6 +165,11 @@ h1.large {
     font-size: 56px;
     margin: 0;
     line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
 }
 
 form h2 {
@@ -115,6 +182,7 @@ input[type="text"] {
     width: 400px;
     min-width: 100px;
     padding: 5px;
+    border-radius: 7px;
 }
 /*############# Mobile ###############*/
 @media screen and (max-width: 680px) {
@@ -147,4 +215,60 @@ input[type="text"] {
         display: block;
         text-align: left;
     }
+    
+    h1.section2Header {
+        font-size: 50px;
+    }
+    
+    article p {
+        font-size: 25px;
+    }
+    
+    .col-6, .col-4,
+    .col-7, .col-5{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    
+    div.pyIcon {
+        margin: 10px;
+    }
+    
+    div.pyIcon img {
+        width 100%;
+    }
+    
+    div.leftSide-col, 
+    div.rightSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
 }
+
+/*############# Image Resizing ###############*/
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.pytorch {
+    width: 300px;
+    height: 300px
+}
+
