@@ -96,21 +96,141 @@
 //    console.log("Cat 3 is the cutest!");
 //}
 
-var student1 = "Timmy";
-var student2 = "Janessa";
-var student3 = "Arun";
+//var student1 = "Timmy";
+//var student2 = "Janessa";
+//var student3 = "Arun";
+//
+//var students = ["Timmy", "Janessa", "Arun"];
+//
+//var naughtyList = [];
+//
+//naughtyList.push(students[0]);
+//
+//var index = naughtyList.indexOf("Timmy");
+//console.log(naughtyList)
+//
+//if (index > -1) {
+//    naughtyList.splice(index, 1);
+//}
+//
+//console.log(naughtyList);
 
-var students = ["Timmy", "Janessa", "Arun"];
+//var length1 = 15;
+//var width1 = 10;
+//var area1 = length1 * width1;
+//
+//var length2 = 12;
+//var width2 = 14;
+//
+//var area2 = length2 * width2;
+//console.log(area1);
+//console.log(area2);
 
-var naughtyList = [];
+//function area(length, width) {
+//    return length*width;
+//}
+//
+//var rectanglesAreas = [];
+//rectanglesAreas.push(area(10,15));
+//rectanglesAreas.push(area(14,2));
+//rectanglesAreas.push(area(4,5));
+//console.log(rectanglesAreas);
+//
+//var bankBalance = 500;
+//
+//function makeTransaction(priceOfSale) {
+//    if (priceOfSale <= bankBalance) {
+//        bankBalance -= priceOfSale;
+//        console.log("Purchase Successful");
+//    }
+//    else console.log("Insufficient Funds");
+//}
+//
+//console.log(bankBalance);
+//makeTransaction(79.00);
+//console.log(bankBalance);
+//makeTransaction(2.32);
+//console.log(bankBalance);
+//makeTransaction(10.45);
+//console.log(bankBalance);
+//makeTransaction(450.00);
+//console.log(bankBalance);
+//
+//var transaction = function(priceOfSale) {
+//    if (priceOfSale <= bankBalance) {
+//        bankBalance -= priceOfSale;
+//        console.log("Purchase Successful");
+//    }
+//    else console.log("Insufficient Funds");
+//};
+//
+//var printCustomerName = function(first,last) {
+//    console.log("Frist Name: " + first + " Last Name: " + last);
+//}
+//
+//var applyForCreditCard = function(creditScore, soul) {
+//    // call some function to process application
+//}
+//
+//var bankOperations = [];
+//bankOperations.push(transaction);
+//bankOperations.push(printCustomerName);
+//bankOperations.push(applyForCreditCard);
 
-naughtyList.push(students[0]);
+//var student0 = {
+//    firstName: "Jane",
+//    lastName: "Looo",
+//    age: 8,
+//    greeting: function() {
+//        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+//    }
+//};
+//
+//console.log(student0.greeting());
 
-var index = naughtyList.indexOf("Timmy");
-console.log(naughtyList)
+//Creates a new empty object
+//var student1 = {};
+//student1.firstName = "John";
+//student1.lastName = "Parker";
+//student1.age = 7;
+//
+//var student2 = {};
+//student2.firstName = "Zack";
+//student2.lastName = "Bobo";
+//student2.age = 5;
+//
+//var students = [];
+//students.push(student0);
+//students.push(student1);
+//students.push(student2);
 
-if (index > -1) {
-    naughtyList.splice(index, 1);
+var students = [];
+
+function Student(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.greeting = function() {
+        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+};
 }
 
-console.log(naughtyList);
+var students = [];
+
+students.push(new Student("Jenny","Laga",5));
+students.push(new Student("Timmy", "Turner",8));
+students.push(new Student("Carl","Jr",4));
+
+var student = students[0];
+
+for (var key in student) {
+    console.log(student[key]);
+}
+//for (var i = 0; i < students.length; i++) {
+//    console.log(students[i].greeting());
+//}
+
+//console.log(student.firstName);
+//console.log(student.lastName);
+//console.log(student["firstName"]);
+//console.log(student["lastName"]);
