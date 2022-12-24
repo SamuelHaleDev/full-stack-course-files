@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(12, 25px);
+  grid-template-areas:
+    "one one one one two two three three four four four four"
+    "one one one one two two three three four four four four"
+    "one one one one two two five five six seven seven seven"
+    "one one one one two two five five six seven seven seven"
+    "one one one one two two five five ten ten ten ten"
+    "one one one one two two five five ten ten ten ten"
+    "eight eight nine nine two two five five ten ten ten ten"
+    "eight eight eleven eleven two two five five ten ten ten ten"
+    "eight eight eleven eleven two two five five ten ten ten ten"
+    "eight eight eleven eleven thirteen thirteen thirteen thirteen ten ten ten ten"
+    "twelve twelve twelve twelve thirteen thirteen thirteen thirteen ten ten ten ten"
+    "twelve twelve twelve twelve thirteen thirteen thirteen thirteen fourteen fourteen fourteen fourteen";
+  gap: 5px;
+  justify-content: center;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.ten {
+  grid-area: ten;
+}
+.eleven {
+  grid-area: eleven;
+}
+.twelve {
+  grid-area: twelve;
+}
+.thirteen {
+  grid-area: thirteen;
+}
+
+.fourteen {
+  grid-area: fourteen;
+}
+
+.one,
+.ten,
+.thirteen {
+  background-color: purple;
+}
+
+.three,
+.six,
+.nine,
+.fourteen {
+  background-color: aqua;
+}
+
+.two,
+.four,
+.eight,
+.twelve {
+  background-color: green;
+}
+
+.five,
+.eleven,
+.seven {
+  background-color: red;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen {
+  text-align: center;
+  border-radius: 10px;
+}
